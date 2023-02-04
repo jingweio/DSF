@@ -6,14 +6,14 @@ Spectral Graph Neural Networks (GNNs) have achieved tremendous success in graph 
 \end{abstract}
 
 ## Requirement
-- pytorch 
-- pytorch_geometric 
-- dgl 
-- networkx 
-- sklearn 
-- scipy 
-- numpy 
-- optuna 
+- pytorch 1.8.0
+- pytorch_geometric 2.0.1
+- dgl 0.7.1
+- networkx 2.5.1
+- sklearn 0.24.2
+- scipy 1.5.3
+- numpy 1.19.5
+- optuna 2.9.1
 
 
 ## Datasets
