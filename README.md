@@ -13,4 +13,4 @@ Spectral Graph Neural Networks (GNNs) have achieved tremendous success in graph 
 
 
 ## Interpretable Experimental Results
-<img src="https://github.com/jingweio/DSF/blob/main/intepVisual.png"/>
+<img src="https://github.com/jingweio/DSF/blob/main/intep.png"/>
