@@ -6,14 +6,14 @@ Spectral Graph Neural Networks (GNNs) have achieved tremendous success in graph 
 \end{abstract}
 
 ## Requirement
-- pytorch==
-- torch_geometric==
-- dgl==
-- networkx==
-- sklearn==
-- scipy==
-- numpy==
-- optuna==
+- pytorch 
+- pytorch_geometric 
+- dgl 
+- networkx 
+- sklearn 
+- scipy 
+- numpy 
+- optuna 
 
 
 ## Datasets
@@ -21,7 +21,14 @@ We use the following 10 benchmark datasets in our experiments. **Chameleon** and
 **Wisconsin**, **Cornell**, and **Texas**~ are three webpage datasets collected by Carnegie Mellon University, where nodes are web pages classified into five classes, and edges correspond to hyperlinks. The bag-of-word representations of web pages are taken as node features. **Twtich-DE** is a social network where nodes, edges, and labels respectively represent twitch users, mutual friendship, and whether a streamer uses explicit language or not. Node features encode users’ information in streaming habits, game preference, and location. **Cora** and **Citeseer** are three widely used citation networks with strong homophily, where nodes are scientific papers, edges denote undirected citations, and each node is assigned with one topic as well as bag-of-word features. **Computers** and **Photo** are two Amazon co-purchase graphs. Nodes are goods connected by an edge if they are frequently bought together. The product reviews are encoded into the bag-of-words to be node features, and the product category corresponds to the class label.
 
 ## Hyper-parameters Setting
-We implement
+As extensive experiments with different base models over various datasets need be conducted, we tune our hyper-parameters using [Optuna](https://github.com/optuna/optuna) for 200 trails with a broad searching space defined as
+- learning rate $\sim$ [1e-4, 1e-1]
+- weight decay $\sim$ [5e-8, 1e-2]
+- dropout $\sim$ {0, 0.1, ..., 0.8} by 0.1
+- iterative optimization coefficients $\eta_1, \eta_2 \sim$ {0.1, 0.2, ..., 1.0} by 0.1
+- orthogonal regularization parameter $\lambda_\text{orth} \sim$ [1e-2, 1]
+- the number of raw positional features $f_p \sim$ {2, 4, ..., 32} by 2
+- the initializing methods for node positional embeddings $\sim$ {LapPE, RWPE}.
 
 ## Interpretable Experimental Results
 <img src="https://github.com/jingweio/DSF/blob/main/intep.png"/>
