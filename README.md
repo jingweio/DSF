@@ -10,8 +10,12 @@ Spectral Graph Neural Networks (GNNs) have achieved tremendous success in graph 
 
 
 ## Datasets
-We use the following 10 benchmark datasets in our experiments. **Chameleon** and **Squirrel** are two wikipedia networks where web pages are connected by mutual links. Each web page has some keywords as features and is classified into five categories. 
-**Wisconsin**, **Cornell**, and **Texas** are three webpage datasets collected by Carnegie Mellon University, where nodes are web pages classified into five classes, and edges correspond to hyperlinks. The bag-of-word representations of web pages are taken as node features. **Twtich-DE** is a social network where nodes, edges, and labels respectively represent twitch users, mutual friendship, and whether a streamer uses explicit language or not. Node features encode users’ information in streaming habits, game preference, and location. **Cora** and **Citeseer** are three widely used citation networks with strong homophily, where nodes are scientific papers, edges denote undirected citations, and each node is assigned with one topic as well as bag-of-word features. **Computers** and **Photo** are two Amazon co-purchase graphs. Nodes are goods connected by an edge if they are frequently bought together. The product reviews are encoded into the bag-of-words to be node features, and the product category corresponds to the class label.
+We use the following 11 benchmark datasets in our experiments.
+**Chameleon** and **Squirrel** are two wikipedia networks where web pages are connected by mutual links. Each web page has some keywords as features and is classified into five categories. 
+**Wisconsin**, **Cornell**, and **Texas** are three webpage datasets collected by Carnegie Mellon University, where nodes are web pages classified into five classes, and edges correspond to hyperlinks. The bag-of-word representations of web pages are taken as node features.
+**Twtich-DE** is a social network where nodes, edges, and labels respectively represent twitch users, mutual friendship, and whether a streamer uses explicit language or not. Node features encode users’ information in streaming habits, game preference, and location.
+**Cora**, **Citeseer**, and **Pubmed** are three widely used citation networks with strong homophily, where nodes are scientific papers, edges denote undirected citations, and each node is assigned with one topic as well as bag-of-word features.
+**Computers** and **Photo** are two Amazon co-purchase graphs. Nodes are goods connected by an edge if they are frequently bought together. The product reviews are encoded into the bag-of-words to be node features, and the product category corresponds to the class label.
 
 
 ## Requirements
