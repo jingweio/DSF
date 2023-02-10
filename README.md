@@ -42,6 +42,8 @@ As extensive experiments with different base models over various datasets need b
 ## UPDATE (as of Feb 10, 2023): Further analysis on measuring
 
 
-<img src="https://github.com/jingweio/DSF/blob/main/figures/intep.png"/>
+<img src="https://github.com/jingweio/DSF/blob/main/figures/staDis_distribBox.png"/>
+<img src="https://github.com/jingweio/DSF/blob/main/figures/staDis_distribLine.png"/>
+<img src="https://github.com/jingweio/DSF/blob/main/figures/main__LocUfreq_histgram_typical.png"/>
+<img src="https://github.com/jingweio/DSF/blob/main/figures/supply__LocUfreq_histgram_typical.png"/>
 
-<img src="https://github.com/jingweio/DSF/blob/main/figures/intep.png"/>
