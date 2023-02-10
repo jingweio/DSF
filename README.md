@@ -12,6 +12,34 @@ Spectral Graph Neural Networks (GNNs) have achieved tremendous success in graph 
 <b>Figure 1: (a)-(c) Diverse filters learned from real-world networks, where five representative curves are plotted for illustration. On each graph, these filters display similar overall shapes but different local details in function curves, showing the capability of our DSF in capturing both the global graph structure and locally varied linking patterns. (d) Visualization of node-specific filter weights on Cornell dataset, where alike color indicates similar filter weights between nodes. Overall, nodes can be differentiated based on their disjoint underlying regions as circled by the blue and green dashed lines, and far-reaching nodes can still learn similar filter weights due to their akin local structures. E.g., vertices on the graph border are mostly ingrained in a line subgraph such as • − • − •, and some unusual cases can be handled (see details in Section 5.4). These results justify the enhanced model interpretability by learning diverse spectral filters on the micro level.<b>
 </p>
 
+## Further analysis on Local Graph Frequency (not included in our published version)
+To quantify the diversity degree of our Local Graph Frequency across the graph, we propose a new metric called Diversity of Local Graph Frequency, and denote it as $\tau_n$ w.r.t. the $n^{\text{th}}$ eigenvector. Further details about the Local Graph Frequency refer to our paper.
+
+<p align = "center">
+<img src=https://github.com/jingweio/DSF/blob/main/figures/divLGF.png width=60% />
+</p>
+  
+For each network, we decompose its laplacian matrix, compute the Diversity of Local Graph Frequency, and visualize the distribution in Figure 2. To further demonstrate the most representative distribution of our Local Graph Frequency, we visualize the group of Local Graph Frequency with the closet diversity degree to the mean. The drawed histgrams on multiple networks are displayed in Figure 3.
+
+<p align = "center">
+<img src = https://github.com/jingweio/DSF/blob/main/figures/staDis_distrib.png>
+</p>
+</p>
+<p align = "left">
+<b>
+Figure 2: Diversity of Local Graph Frequency on networks with different diversity degrees. Each number beside data name represents the averaged Diversity of Local Graph Frequency as computed in Definition 1. (a) Distributions of the diversity degrees of Local Graph Frequency, i.e., $\{\tau_n\}_{n=1}^{N}$, on different networks. Each column represents one graph. (b) Diversity degree of Local Graph Frequency, i.e., $\{\tau_n\}_{n=1}^{N}$, on different graphs. Each curve denotes one graph. The values are sorted in ascending order for better visualization.
+<b>
+</p>
+
+<p align = "center">
+<img src = "https://github.com/jingweio/DSF/blob/main/figures/main__LocUfreq_histgram_typical.png">
+</p>
+<p align = "left">
+<b>Figure 3: Distribution of Local Graph Frequency on various real graph data. Each number beside data name represents the averaged Diversity of Local Graph Frequency
+<b>
+</p>
+
+
 
 ## Datasets
 We use the following 11 benchmark datasets in our experiments.
@@ -43,31 +71,3 @@ As extensive experiments with different base models over various datasets need b
 - the number of raw positional features $f_p \sim$ {2, 4, ..., 32} by 2
 - the initializing methods for node positional embeddings $\sim$ {LapPE, RWPE}.
 
-
-## Further analysis on Local Graph Frequency
-To quantify the diversity degree of our Local Graph Frequency across the graph, we newly propose a metric called Diversity of Local Graph Frequency, and denote it as $\tau_n$ with respect to the $n^{\text{th}}$ eigenvector.
-
-<p align = "center">
-<img src=https://github.com/jingweio/DSF/blob/main/figures/divLGF.png width=60% />
-</p>
-  
-
-
-<p align = "center">
-<img src = https://github.com/jingweio/DSF/blob/main/figures/staDis_distrib.png>
-</p>
-<p align = "center">
-<b>Figure 2: <b>
-</p>
-
-  
-<p align = "center">
-<img src = "https://github.com/jingweio/DSF/blob/main/figures/main__LocUfreq_histgram_typical.png">
-</p>
-<p align = "center">
-<b>Figure 4: <b>
-</p>
-
-  
-## References
-[1] Menéndez, M. L., et al. "The jensen-shannon divergence." Journal of the Franklin Institute 334.2 (1997): 307-318.
