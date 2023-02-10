@@ -45,9 +45,10 @@ As extensive experiments with different base models over various datasets need b
 
 
 ## Further analysis on Local Graph Frequency
-To quantify the diversity of local graph frequency across the graph, we newly propose a metric called LGF-div index, and denote it as $\beta_f$ w.r.t. the $f^{th}$ eigenvector. The definition is provided below.
+To quantify the diversity of local graph frequency across the graph, we newly propose a metric called LGF-div index, and denote it as $\beta_n$ w.r.t. the $n^{th}$ eigenvector. The definition is provided below.
+  
+  
 
-We define LGF-div as an index of the diversity of Local Graph Frequency. For each group of Local Graph Frequency $λ_I$
 
 <p align = "center">
 <img src = "https://github.com/jingweio/DSF/blob/main/figures/staDis_distribBox.png">
@@ -72,6 +73,4 @@ We define LGF-div as an index of the diversity of Local Graph Frequency. For eac
 
   
 ## References
-[1] Joyce, James M. "Kullback-leibler divergence." International encyclopedia of statistical science. Springer, Berlin, Heidelberg, 2011. 720-722.
-  
-[2] Menéndez, M. L., et al. "The jensen-shannon divergence." Journal of the Franklin Institute 334.2 (1997): 307-318.
+[1] Menéndez, M. L., et al. "The jensen-shannon divergence." Journal of the Franklin Institute 334.2 (1997): 307-318.
