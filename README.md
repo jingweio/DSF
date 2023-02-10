@@ -33,7 +33,7 @@ Figure 2: Diversity of Local Graph Frequency on networks with different diversit
 <img src = "https://github.com/jingweio/DSF/blob/main/figures/main__LocUfreq_histgram_typical.png">
 </p>
 <p align = "left">
-Figure 3: Distribution of Local Graph Frequency on various real graph data. Each number beside data name represents the averaged Diversity of Local Graph Frequency.
+Figure 3: Distribution of Local Graph Frequency on various real graphs. Each number beside data name represents the averaged Diversity of Local Graph Frequency.
 </p>
 
 
