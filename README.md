@@ -5,7 +5,12 @@ Code for WWW 2023 paper "Graph Neural Networks with Diverse Spectral Filtering"
 Spectral Graph Neural Networks (GNNs) have achieved tremendous success in graph machine learning, with polynomial filters applied for graph convolutions, where all nodes share the ***identical*** filter weights to mine their local contexts. Despite the success, existing spectral GNNs usually fail to deal with complex networks (e.g., WWW) due to such ***homogeneous*** spectral filtering setting that ignores the regional ***heterogeneity*** as typically seen in real-world networks. To tackle this issue, we propose a novel ***diverse*** spectral filtering (DSF) framework, which automatically learns node-specific filter weights to exploit the varying local structure properly. Particularly, the diverse filter weights consist of two components --- A global one shared among all nodes, and a local one that varies along network edges to reflect node difference arising from distinct graph parts --- to balance between local and global information. As such, not only can the global graph characteristics be captured, but also the diverse local patterns can be mined with awareness of different node positions. Interestingly, we formulate a novel optimization problem to assist in learning diverse filters, which also enables us to enhance any spectral GNNs with our DSF framework. We showcase the proposed framework on three state-of-the-arts including GPR-GNN, BernNet, and JacobiConv. Extensive experiments over 10 benchmark datasets demonstrate that our framework can consistently boost model performance by up to 4.92% in node classification tasks, producing diverse filters with enhanced interpretability.
 
 ## Interpretable Diverse Filters
-<img src="https://github.com/jingweio/DSF/blob/main/figures/intep.png"/>
+<p align = "center">
+<img src = "https://github.com/jingweio/DSF/blob/main/figures/intep.png">
+</p>
+<p align = "left">
+<b>Figure 1: (a)-(c) Diverse filters learned from real-world networks, where five representative curves are plotted for illustration. On each graph, these filters display similar overall shapes but different local details in function curves, showing the capability of our DSF in capturing both the global graph structure and locally varied linking patterns. (d) Visualization of node-specific filter weights on Cornell dataset, where alike color indicates similar filter weights between nodes. Overall, nodes can be differentiated based on their disjoint underlying regions as circled by the blue and green dashed lines, and far-reaching nodes can still learn similar filter weights due to their akin local structures. E.g., vertices on the graph border are mostly ingrained in a line subgraph such as • − • − •, and some unusual cases can be handled (see details in Section 5.4). These results justify the enhanced model interpretability by learning diverse spectral filters on the micro level.<b>
+</p>
 
 
 ## Datasets
@@ -41,10 +46,15 @@ As extensive experiments with different base models over various datasets need b
 
 ## UPDATE (as of Feb 10, 2023): Further analysis on measuring
 
-<p align="center">
-      <img src="https://github.com/jingweio/DSF/blob/main/figures/staDis_distribBox.png" align="left">
-      <img src="https://github.com/jingweio/DSF/blob/main/figures/staDis_distribLine.png" align="right">
+<p align = "center">
+<img src = "https://github.com/jingweio/DSF/blob/main/figures/staDis_distribBox.png">
+</p>
+<p align = "center">
+<b>Figure 2: <b>
 </p>
 
-<img src="https://github.com/jingweio/DSF/blob/main/figures/main__LocUfreq_histgram_typical.png"/>
+
+
+https://github.com/jingweio/DSF/blob/main/figures/staDis_distribLine.png
+https://github.com/jingweio/DSF/blob/main/figures/main__LocUfreq_histgram_typical.png
 
