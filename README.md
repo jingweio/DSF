@@ -13,7 +13,7 @@ Spectral Graph Neural Networks (GNNs) have achieved tremendous success in graph 
 </p>
 
 ## Further analysis on Local Graph Frequency (not included in our published version)
-To quantify the diversity degree of our Local Graph Frequency across the graph, we propose a new metric called Diversity of Local Graph Frequency, and denote it as $\tau_n$ w.r.t. the $n^{\text{th}}$ eigenvector. Further details about the Local Graph Frequency refer to our paper.
+Upate (as of Feb 10, 2023): To quantify the diversity degree of our Local Graph Frequency across the graph, we propose a new metric called Diversity of Local Graph Frequency, and denote it as $\tau_n$ w.r.t. the $n^{\text{th}}$ eigenvector. Further details about the Local Graph Frequency refer to our paper.
 
 <p align = "center">
 <img src=https://github.com/jingweio/DSF/blob/main/figures/divLGF.png width=70% />
