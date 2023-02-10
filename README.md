@@ -45,24 +45,21 @@ As extensive experiments with different base models over various datasets need b
 
 
 ## Further analysis on Local Graph Frequency
-To quantify the diversity of local graph frequency across the graph, we newly propose a metric called LGF-div index, and denote it as $\beta_n$ w.r.t. the $n^{th}$ eigenvector. The definition is provided below.
-  
+To quantify the diversity degree of our Local Graph Frequency across the graph, we newly propose a metric called Diversity of Local Graph Frequency, and denote it as $\tau_n$ with respect to the $n^{\text{th}}$ eigenvector.
+
+<p align = "center">
+<img src=https://github.com/jingweio/DSF/blob/main/figures/divLGF.png width=60% />
+</p>
   
 
 
 <p align = "center">
-<img src = "https://github.com/jingweio/DSF/blob/main/figures/staDis_distribBox.png">
+<img src = https://github.com/jingweio/DSF/blob/main/figures/staDis_distrib.png>
 </p>
 <p align = "center">
 <b>Figure 2: <b>
 </p>
 
-<p align = "center">
-<img src = "https://github.com/jingweio/DSF/blob/main/figures/staDis_distribLine.png">
-</p>
-<p align = "center">
-<b>Figure 3: <b>
-</p>
   
 <p align = "center">
 <img src = "https://github.com/jingweio/DSF/blob/main/figures/main__LocUfreq_histgram_typical.png">
