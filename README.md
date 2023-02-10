@@ -44,7 +44,10 @@ As extensive experiments with different base models over various datasets need b
 - the initializing methods for node positional embeddings $\sim$ {LapPE, RWPE}.
 
 
-## UPDATE (as of Feb 10, 2023): Further analysis on measuring
+## Further analysis on Local Graph Frequency
+To quantify the diversity of local graph frequency across the graph, we newly propose a metric called LGF-div index, and denote it as $\beta_f$ w.r.t. the $f^{th}$ eigenvector. The definition is provided below.
+
+We define LGF-div as an index of the diversity of Local Graph Frequency. For each group of Local Graph Frequency $λ_I$
 
 <p align = "center">
 <img src = "https://github.com/jingweio/DSF/blob/main/figures/staDis_distribBox.png">
@@ -67,4 +70,8 @@ As extensive experiments with different base models over various datasets need b
 <b>Figure 4: <b>
 </p>
 
-
+  
+## References
+[1] Joyce, James M. "Kullback-leibler divergence." International encyclopedia of statistical science. Springer, Berlin, Heidelberg, 2011. 720-722.
+  
+[2] Menéndez, M. L., et al. "The jensen-shannon divergence." Journal of the Franklin Institute 334.2 (1997): 307-318.
