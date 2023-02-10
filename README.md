@@ -9,11 +9,11 @@ Spectral Graph Neural Networks (GNNs) have achieved tremendous success in graph 
 <img src = "https://github.com/jingweio/DSF/blob/main/figures/Intep.png">
 </p>
 <p align = "left">
-<b>Figure 1: (a)-(c) Diverse filters learned from real-world networks, where five representative curves are plotted for illustration. On each graph, these filters display similar overall shapes but different local details in function curves, showing the capability of our DSF in capturing both the global graph structure and locally varied linking patterns. (d) Visualization of node-specific filter weights on Cornell dataset, where alike color indicates similar filter weights between nodes. Overall, nodes can be differentiated based on their disjoint underlying regions as circled by the blue and green dashed lines, and far-reaching nodes can still learn similar filter weights due to their akin local structures. E.g., vertices on the graph border are mostly ingrained in a line subgraph such as • − • − •, and some unusual cases can be handled (see details in Section 5.4). These results justify the enhanced model interpretability by learning diverse spectral filters on the micro level.<b>
+Figure 1: (a)-(c) Diverse filters learned from real-world networks, where five representative curves are plotted for illustration. On each graph, these filters display similar overall shapes but different local details in function curves, showing the capability of our DSF in capturing both the global graph structure and locally varied linking patterns. (d) Visualization of node-specific filter weights on Cornell dataset, where alike color indicates similar filter weights between nodes. Overall, nodes can be differentiated based on their disjoint underlying regions as circled by the blue and green dashed lines, and far-reaching nodes can still learn similar filter weights due to their akin local structures. E.g., vertices on the graph border are mostly ingrained in a line subgraph such as • − • − •, and some unusual cases can be handled (see details in Section 5.4). These results justify the enhanced model interpretability by learning diverse spectral filters on the micro level.
 </p>
 
 ## Further analysis on Local Graph Frequency (not included in our published version)
-Upate (as of Feb 10, 2023): To quantify the diversity degree of our Local Graph Frequency across the graph, we propose a new metric called Diversity of Local Graph Frequency, and denote it as $\tau_n$ w.r.t. the $n^{\text{th}}$ eigenvector. Further details about the Local Graph Frequency refer to our paper.
+Upate (as of Feb 10, 2023): To quantify the diversity degree of our Local Graph Frequency across the graph, we propose a new metric called Diversity of Local Graph Frequency below, and denote it as $\tau_n$ w.r.t. the $n^{\text{th}}$ eigenvector. Further details about the Local Graph Frequency refer to our paper.
 
 <p align = "center">
 <img src=https://github.com/jingweio/DSF/blob/main/figures/divLGF.png width=70% />
@@ -26,17 +26,14 @@ For each network, we decompose its laplacian matrix, compute the Diversity of Lo
 </p>
 </p>
 <p align = "left">
-<b>
 Figure 2: Diversity of Local Graph Frequency on networks with different diversity degrees. Each number beside data name represents the averaged Diversity of Local Graph Frequency as computed in Definition 1. (a) Distributions of the diversity degrees of Local Graph Frequency, i.e., $\{\tau_n\}_{n=1}^{N}$, on different networks. Each column represents one graph. (b) Diversity degree of Local Graph Frequency, i.e., $\{\tau_n\}_{n=1}^{N}$, on different graphs. Each curve denotes one graph. The values are sorted in ascending order for better visualization.
-<b>
 </p>
 
 <p align = "center">
 <img src = "https://github.com/jingweio/DSF/blob/main/figures/main__LocUfreq_histgram_typical.png">
 </p>
 <p align = "left">
-<b>Figure 3: Distribution of Local Graph Frequency on various real graph data. Each number beside data name represents the averaged Diversity of Local Graph Frequency
-<b>
+Figure 3: Distribution of Local Graph Frequency on various real graph data. Each number beside data name represents the averaged Diversity of Local Graph Frequency.
 </p>
 
 
