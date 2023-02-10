@@ -6,7 +6,7 @@ Spectral Graph Neural Networks (GNNs) have achieved tremendous success in graph 
 
 ## Interpretable Diverse Filters
 <p align = "center">
-<img src = "https://github.com/jingweio/DSF/blob/main/figures/intep.png">
+<img src = "https://github.com/jingweio/DSF/blob/main/figures/Intep.png">
 </p>
 <p align = "left">
 <b>Figure 1: (a)-(c) Diverse filters learned from real-world networks, where five representative curves are plotted for illustration. On each graph, these filters display similar overall shapes but different local details in function curves, showing the capability of our DSF in capturing both the global graph structure and locally varied linking patterns. (d) Visualization of node-specific filter weights on Cornell dataset, where alike color indicates similar filter weights between nodes. Overall, nodes can be differentiated based on their disjoint underlying regions as circled by the blue and green dashed lines, and far-reaching nodes can still learn similar filter weights due to their akin local structures. E.g., vertices on the graph border are mostly ingrained in a line subgraph such as • − • − •, and some unusual cases can be handled (see details in Section 5.4). These results justify the enhanced model interpretability by learning diverse spectral filters on the micro level.<b>
@@ -53,8 +53,18 @@ As extensive experiments with different base models over various datasets need b
 <b>Figure 2: <b>
 </p>
 
+<p align = "center">
+<img src = "https://github.com/jingweio/DSF/blob/main/figures/staDis_distribLine.png">
+</p>
+<p align = "center">
+<b>Figure 3: <b>
+</p>
+  
+<p align = "center">
+<img src = "https://github.com/jingweio/DSF/blob/main/figures/main__LocUfreq_histgram_typical.png">
+</p>
+<p align = "center">
+<b>Figure 4: <b>
+</p>
 
-
-https://github.com/jingweio/DSF/blob/main/figures/staDis_distribLine.png
-https://github.com/jingweio/DSF/blob/main/figures/main__LocUfreq_histgram_typical.png
 
