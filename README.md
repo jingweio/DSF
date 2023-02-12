@@ -19,7 +19,7 @@ Upate (as of Feb 10, 2023): To quantify the diversity degree of our Local Graph 
 <img src=https://github.com/jingweio/DSF/blob/main/figures/divLGF.png width=70% />
 </p>
   
-For each network, we decompose its laplacian matrix, compute the Diversity of Local Graph Frequency, and visualize the distribution in Figure 2. To further demonstrate the most representative distribution of our Local Graph Frequency, we visualize the group of Local Graph Frequency with the closet diversity degree to the mean. The drawed histgrams on multiple networks are displayed in Figure 3.
+For each network, we decompose its laplacian matrix, compute the Diversity of Local Graph Frequency, and visualize the distribution in Figure 2. To further demonstrate the most representative distribution of our Local Graph Frequency, we visualize the group of Local Graph Frequency with the closet diversity degree to the mean. The histgrams on multiple networks are drawed in Figure 3.
 
 <p align = "center">
 <img src = https://github.com/jingweio/DSF/blob/main/figures/staDis_distrib.png>
