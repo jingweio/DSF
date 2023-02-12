@@ -13,7 +13,7 @@ Figure 1: (a)-(c) Diverse filters learned from real-world networks, where five r
 </p>
 
 ## Further analysis on Local Graph Frequency (not included in our published version)
-Upate (as of Feb 10, 2023): To quantify the diversity degree of our Local Graph Frequency across the graph, we propose a new metric called Diversity of Local Graph Frequency below, and denote it as $\tau_n$ w.r.t. the $n^{\text{th}}$ eigenvector. Further details about the Local Graph Frequency refer to our paper.
+Upate (as of Feb 10, 2023): To quantify the diversity degree of our Local Graph Frequency across the graph, we propose a new metric called Diversity of Local Graph Frequency, and denote it as $\tau_n$ w.r.t. the $n^{\text{th}}$ eigenvector. The definition is provided below. Further details about the Local Graph Frequency refer to our paper.
 
 <p align = "center">
 <img src=https://github.com/jingweio/DSF/blob/main/figures/divLGF.png width=70% />
