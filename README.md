@@ -1,6 +1,8 @@
 ## Graph Neural Networks with Diverse Spectral Filtering
 Code for WWW 2023 paper "Graph Neural Networks with Diverse Spectral Filtering"
 
+Video: [short-version](https://slideslive.com/39000277) & [long-version]()
+
 ## Interpretable Diverse Filters
 <p align = "center">
 <img src = "https://github.com/jingweio/DSF/blob/main/figures/Intep.png">
