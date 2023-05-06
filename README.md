@@ -68,3 +68,14 @@ As extensive experiments with different base models over various datasets need b
 - the number of raw positional features $f_p \sim$ {2, 4, ..., 32} by 2
 - the initializing methods for node positional embeddings $\sim$ {LapPE, RWPE}.
 
+
+## Citation
+```
+@inproceedings{guo2023graph,
+  title={Graph Neural Networks with Diverse Spectral Filtering},
+  author={Guo, Jingwei and Huang, Kaizhu and Yi, Xinping and Zhang, Rui},
+  booktitle={Proceedings of the ACM Web Conference 2023},
+  pages={306--316},
+  year={2023}
+}
+```
