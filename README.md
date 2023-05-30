@@ -43,6 +43,16 @@ As extensive experiments with different base models over various datasets need b
 - the number of raw positional features $f_p \sim$ {2, 4, ..., 32} by 2
 - the initializing methods for node positional embeddings $\sim$ {LapPE, RWPE}.
 
+## Code Structure
+Running the below script for encoding node positional information (the encoded embedding have been saved in the folder './data/').
+```
+python enc_pos.py
+```
+Running the below script for reproducing the semi-supervised node classification results.
+```sh
+sh semi_rnd.sh
+```
+
 ## Further analysis on Local Graph Frequency (not included in our published version)
 Upate (as of Feb 10, 2023): To quantify the diversity of our Local Graph Frequency across the graph, we propose a new metric called Diversity of Local Graph Frequency, and denote it as $\tau_n$ w.r.t. the $n^{\text{th}}$ eigenvector. The definition is provided below. Further details about the Local Graph Frequency refer to our paper.
 
