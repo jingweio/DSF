@@ -44,13 +44,13 @@ As extensive experiments with different base models over various datasets need b
 - the initializing methods for node positional embeddings $\sim$ {LapPE, RWPE}.
 
 ## Code Structure
-Running the below script for encoding node positional information (the encoded embedding have been saved in the folder './data/').
+Running the below script for encoding node positions (the encoded positional embeddings have been saved in the folder './data/node_pos_enc').
 ```
 python enc_pos.py
 ```
-Running the below script for reproducing the semi-supervised node classification results.
-```sh
-sh semi_rnd.sh
+Running the below script for node classification.
+```
+python main.py
 ```
 
 ## Further analysis on Local Graph Frequency (not included in our published version)
