@@ -52,8 +52,7 @@ Running the below script for tuning hyper-parameters of DSF on node classificati
 ```
 python hpmOpt.py
 ```
-or 
-Running the below script for node classification.
+or running the below script for node classification.
 ```
 python main.py
 ```
