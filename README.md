@@ -46,8 +46,13 @@ As extensive experiments with different base models over various datasets need b
 ## Code Structure
 Running the below script for node positional encoding (the encoded embeddings have been saved in the folder './data/node_pos_enc').
 ```
-python enc_pos.py
+python posEnc.py
 ```
+Running the below script for tuning hyper-parameters of DSF on node classification tasks.
+```
+python hpmOpt.py
+```
+or 
 Running the below script for node classification.
 ```
 python main.py
