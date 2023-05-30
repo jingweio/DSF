@@ -44,7 +44,7 @@ As extensive experiments with different base models over various datasets need b
 - the initializing methods for node positional embeddings $\sim$ {LapPE, RWPE}.
 
 ## Code Structure
-Running the below script for encoding node positions (the encoded positional embeddings have been saved in the folder './data/node_pos_enc').
+Running the below script for node positional encoding (the encoded embeddings have been saved in the folder './data/node_pos_enc').
 ```
 python enc_pos.py
 ```
