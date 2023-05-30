@@ -65,7 +65,7 @@ Figure 2: Diversity of Local Graph Frequency across mutliple real-world graphs. 
 </p>
 
 <p align = "center">
-<img src = "https://github.com/jingweio/DSF/blob/main/figures/supply__LocUfreq_histgram_typical.png" alt="Figure" width="670">
+<img src = "https://github.com/jingweio/DSF/blob/main/figures/supply__LocUfreq_histgram_typical.png" alt="Figure" width="700">
 </p>
 
 <p align = "left">
