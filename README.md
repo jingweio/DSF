@@ -57,15 +57,19 @@ For each network, we decompose its laplacian matrix, compute the Diversity of Lo
 <img src = https://github.com/jingweio/DSF/blob/main/figures/staDis_distrib.png>
 </p>
 <p align = "left">
-Figure 2: Diversity of Local Graph Frequency on networks with different diversity degrees. Each number beside data name represents the averaged Diversity of Local Graph Frequency as computed in Definition 1. (a) Distributions of the diversity degrees of Local Graph Frequency, i.e., $\{\tau_n\}_{n=1}^{N}$, on different networks. Each column represents one graph. (b) Diversity degree of Local Graph Frequency, i.e., $\{\tau_n\}_{n=1}^{N}$, on different graphs. Each curve denotes one graph. The values are sorted in ascending order for better visualization.
+Figure 2: Diversity of Local Graph Frequency across mutliple real-world graphs. Each number beside data name represents the averaged (across all eigenvectors) Diversity of Local Graph Frequency as computed in Definition 1. (a) Distributions of the diversity degrees of Local Graph Frequency, i.e., $\{\tau_n\}_{n=1}^{N}$, on different networks. Each column represents one graph. (b) Diversity degree of Local Graph Frequency, i.e., $\{\tau_n\}_{n=1}^{N}$, on different graphs. Each curve denotes one graph. The values are sorted in ascending order for better visualization.
 </p>
 
 <p align = "center">
 <img src = "https://github.com/jingweio/DSF/blob/main/figures/main__LocUfreq_histgram_typical.png">
 </p>
 
+<p align = "center">
+<img src = "https://github.com/jingweio/DSF/blob/main/figures/supply__LocUfreq_histgram_typical.png" alt="Figure" width="700">
+</p>
+
 <p align = "left">
-Figure 3: Distribution of Local Graph Frequency on various real graphs. Each number beside data name represents the averaged Diversity of Local Graph Frequency.
+Figure 3: Distribution of the Local Graph Frequency (closet to the mean value) on various real-world networks. Each number beside data name represents the averaged Diversity of Local Graph Frequency.
 </p>
 
 
