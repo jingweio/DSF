@@ -23,14 +23,13 @@ Figure 1: (a)-(c) Diverse filters learned from real-world networks, where five r
 
 ## Datasets
 We use the following 11 benchmark datasets in our experiments.
-**Chameleon** and **Squirrel** are two wikipedia networks where web pages are connected by mutual links. Each web page has some keywords as features and is classified into five categories. 
-**Wisconsin**, **Cornell**, and **Texas** are three webpage datasets collected by Carnegie Mellon University, where nodes are web pages classified into five classes, and edges correspond to hyperlinks. The bag-of-word representations of web pages are taken as node features.
-**Twtich-DE** is a social network where nodes, edges, and labels respectively represent twitch users, mutual friendship, and whether a streamer uses explicit language or not. Node features encode users’ information in streaming habits, game preference, and location.
-**Cora**, **Citeseer**, and **Pubmed** are three widely used citation networks with strong homophily, where nodes are scientific papers, edges denote undirected citations, and each node is assigned with one topic as well as bag-of-word features.
-**Computers** and **Photo** are two Amazon co-purchase graphs. Nodes are goods connected by an edge if they are frequently bought together. The product reviews are encoded into the bag-of-words to be node features, and the product category corresponds to the class label. The experimented datasets are downloaded from the below links:
-- https://github.com/shchur/gnn-benchmark/tree/master/data/npz
-- https://github.com/CUAI/Non-Homophily-Benchmarks/tree/main/data
-
+- **Six heterophilic graphs**:
+[Chameleon and Squirrel](https://github.com/CUAI/Non-Homophily-Benchmarks/tree/main/data) are two wikipedia networks where web pages are connected by mutual links. Each web page has some keywords as features and is classified into five categories;
+[Wisconsin, Cornell, and Texas](https://github.com/CUAI/Non-Homophily-Benchmarks/tree/main/data) are three webpage datasets collected by Carnegie Mellon University, where nodes are web pages classified into five classes, and edges correspond to hyperlinks. The bag-of-word representations of web pages are taken as node features;
+[Twtich-DE](https://github.com/CUAI/Non-Homophily-Benchmarks/tree/main/data) is a social network where nodes, edges, and labels respectively represent twitch users, mutual friendship, and whether a streamer uses explicit language or not. Node features encode users’ information in streaming habits, game preference, and location.
+- **Five homophilic graphs**:
+[Cora, Citeseer, and Pubmed](https://github.com/CUAI/Non-Homophily-Benchmarks/tree/main/data) are three widely used citation networks with strong homophily, where nodes are scientific papers, edges denote undirected citations, and each node is assigned with one topic as well as bag-of-word features;
+[Computers and Photo](https://github.com/shchur/gnn-benchmark/tree/master/data/npz) are two Amazon co-purchase graphs. Nodes are goods connected by an edge if they are frequently bought together. The product reviews are encoded into the bag-of-words to be node features, and the product category corresponds to the class label. 
 
 
 
@@ -45,19 +44,20 @@ As extensive experiments with different base models over various datasets need b
 - the initializing methods for node positional embeddings $\sim$ {LapPE, RWPE}.
 
 ## Further analysis on Local Graph Frequency (not included in our published version)
-Upate (as of Feb 10, 2023): To quantify the diversity degree of our Local Graph Frequency across the graph, we propose a new metric called Diversity of Local Graph Frequency, and denote it as $\tau_n$ w.r.t. the $n^{\text{th}}$ eigenvector. The definition is provided below. Further details about the Local Graph Frequency refer to our paper.
+Upate (as of Feb 10, 2023): To quantify the diversity of our Local Graph Frequency across the graph, we propose a new metric called Diversity of Local Graph Frequency, and denote it as $\tau_n$ w.r.t. the $n^{\text{th}}$ eigenvector. The definition is provided below. Further details about the Local Graph Frequency refer to our paper.
 
 <p align = "center">
 <img src=https://github.com/jingweio/DSF/blob/main/figures/divLGF.png width=70% />
 </p>
   
-For each network, we decompose its laplacian matrix, compute the Diversity of Local Graph Frequency, and visualize the distribution in Figure 2. To further demonstrate the most representative distribution of our Local Graph Frequency, we visualize the group of Local Graph Frequency with the closet diversity degree to the mean. The histgrams on multiple networks are drawed in Figure 3.
+For each network, we decompose its laplacian matrix, compute the Diversity of Local Graph Frequency, and visualize the distribution in Figure 2. 
+In Figure 3, we visualize the group of Local Graph Frequency histograms with the closest diversity to the mean, demonstrating the most representative distribution of our Local Graph Frequency across multiple networks.
 
 <p align = "center">
 <img src = https://github.com/jingweio/DSF/blob/main/figures/staDis_distrib.png>
 </p>
 <p align = "left">
-Figure 2: Diversity of Local Graph Frequency across mutliple real-world graphs. Each number beside data name represents the averaged (across all eigenvectors) Diversity of Local Graph Frequency as computed in Definition 1. (a) Distributions of the diversity degrees of Local Graph Frequency, i.e., $\{\tau_n\}_{n=1}^{N}$, on different networks. Each column represents one graph. (b) Diversity degree of Local Graph Frequency, i.e., $\{\tau_n\}_{n=1}^{N}$, on different graphs. Each curve denotes one graph. The values are sorted in ascending order for better visualization.
+Figure 2: Distributions of the Diversity of Local Graph Frequency ($\{\tau_n\}_{n=1}^{N}$) on different networks. Each number beside data name refers to the averaged values across all eigenvectors. (a) Each column represents one graph. (b) Each curve denotes one graph. The values are sorted in ascending order for better visualization.
 </p>
 
 <p align = "center">
@@ -69,7 +69,8 @@ Figure 2: Diversity of Local Graph Frequency across mutliple real-world graphs. 
 </p>
 
 <p align = "left">
-Figure 3: Distribution of the Local Graph Frequency (closet to the mean value) on various real-world networks. Each number beside data name represents the averaged Diversity of Local Graph Frequency.
+Figure 3: Distribution of the group of Local Graph Frequency (with a diversity value closet to the mean) on various real-world networks. Each number beside data name represents the diversity value.
+It can be observed that heterophilic graphs exhibit high diversity values, implying complex internal connectivity patterns. In contrast, homophilic graphs like Cora, Citeseer, and Pubmed have relatively low diversity values due to uniform internal connections primarily within the same class.
 </p>
 
 
