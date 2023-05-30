@@ -27,7 +27,12 @@ We use the following 11 benchmark datasets in our experiments.
 **Wisconsin**, **Cornell**, and **Texas** are three webpage datasets collected by Carnegie Mellon University, where nodes are web pages classified into five classes, and edges correspond to hyperlinks. The bag-of-word representations of web pages are taken as node features.
 **Twtich-DE** is a social network where nodes, edges, and labels respectively represent twitch users, mutual friendship, and whether a streamer uses explicit language or not. Node features encode users’ information in streaming habits, game preference, and location.
 **Cora**, **Citeseer**, and **Pubmed** are three widely used citation networks with strong homophily, where nodes are scientific papers, edges denote undirected citations, and each node is assigned with one topic as well as bag-of-word features.
-**Computers** and **Photo** are two Amazon co-purchase graphs. Nodes are goods connected by an edge if they are frequently bought together. The product reviews are encoded into the bag-of-words to be node features, and the product category corresponds to the class label.
+**Computers** and **Photo** are two Amazon co-purchase graphs. Nodes are goods connected by an edge if they are frequently bought together. The product reviews are encoded into the bag-of-words to be node features, and the product category corresponds to the class label. The experimented datasets are downloaded from the below links:
+- https://github.com/shchur/gnn-benchmark/tree/master/data/npz
+- https://github.com/CUAI/Non-Homophily-Benchmarks/tree/main/data
+
+
+
 
 ## Hyper-parameters Setting
 As extensive experiments with different base models over various datasets need be conducted, we tune our hyper-parameters using [Optuna](https://github.com/optuna/optuna) for 200 trails with a broad searching space defined as
