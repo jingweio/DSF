@@ -15,6 +15,7 @@ Figure 1: (a)-(c) Diverse filters learned from real-world networks, where five r
 - pytorch_geometric==2.0.1
 - dgl==0.7.1
 - networkx==2.5.1
+- seaborn==0.11.2
 - sklearn==0.24.2
 - scipy==1.5.3
 - numpy==1.19.5
