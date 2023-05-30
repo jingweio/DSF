@@ -79,7 +79,7 @@ Figure 2: Distributions of the Diversity of Local Graph Frequency ($\{\tau_n\}_{
 </p>
 
 <p align = "center">
-<img src = "https://github.com/jingweio/DSF/blob/main/figures/supply__LocUfreq_histgram_typical.png" alt="Figure" width="670">
+<img src = "https://github.com/jingweio/DSF/blob/main/figures/supply__LocUfreq_histgram_typical.png" alt="Figure" width="650">
 </p>
 
 <p align = "left">
