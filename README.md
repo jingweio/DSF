@@ -57,36 +57,6 @@ or running the below script for node classification.
 python main.py
 ```
 
-## Further analysis on Local Graph Frequency (not included in our published version)
-Update (as of Feb 10, 2023): To quantify the diversity of our Local Graph Frequency across the graph, we propose a new metric called Diversity of Local Graph Frequency, and denote it as $\tau_n$ w.r.t. the $n^{\text{th}}$ eigenvector. The definition is provided below. Further details about the Local Graph Frequency refer to our paper.
-
-<p align = "center">
-<img src=https://github.com/jingweio/DSF/blob/main/figures/divLGF.png width=70% />
-</p>
-  
-For each network, we decompose its laplacian matrix, compute the Diversity of Local Graph Frequency, and visualize the distribution in Figure 2. 
-In Figure 3, we visualize the group of Local Graph Frequency histograms with the closest diversity to the mean, demonstrating the most representative distribution of our Local Graph Frequency across multiple networks.
-
-<p align = "center">
-<img src = https://github.com/jingweio/DSF/blob/main/figures/staDis_distrib.png>
-</p>
-<p align = "left">
-Figure 2: Distributions of the Diversity of Local Graph Frequency ($\{\tau_n\}_{n=1}^{N}$) on different networks. Each number beside data name refers to the averaged values across all eigenvectors. (a) Each column represents one graph. (b) Each curve denotes one graph. The values are sorted in ascending order for better visualization.
-</p>
-
-<p align = "center">
-<img src = "https://github.com/jingweio/DSF/blob/main/figures/main__LocUfreq_histgram_typical.png">
-</p>
-
-<p align = "center">
-<img src = "https://github.com/jingweio/DSF/blob/main/figures/supply__LocUfreq_histgram_typical.png" alt="Figure" width="650">
-</p>
-
-<p align = "left">
-Figure 3: Distribution of the group of Local Graph Frequency (with a diversity value closet to the mean) on various real-world networks. Each number beside data name represents the diversity value.
-It can be observed that heterophilic graphs exhibit high diversity values, implying complex internal connectivity patterns. In contrast, homophilic graphs like Cora, Citeseer, and Pubmed have relatively low diversity values due to uniform internal connections primarily within the same class.
-</p>
-
 
 ## Citation
 ```
