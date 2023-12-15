@@ -1,5 +1,5 @@
-## Graph Neural Networks with Diverse Spectral Filtering
-Code for WWW 2023 paper ["Graph Neural Networks with Diverse Spectral Filtering"](https://dl.acm.org/doi/pdf/10.1145/3543507.3583324) ([short-video](https://slideslive.com/39000277) & [long-ppt](https://github.com/jingweio/DSF/blob/main/dsf_pre.pdf) & [long-speech](https://github.com/jingweio/DSF/blob/main/dsf_speech.pdf))
+## Graph Neural Networks with Diverse Spectral Filtering 
+Code for WWW 2023 paper "Graph Neural Networks with Diverse Spectral Filtering" ([arXiv](https://arxiv.org/abs/2312.09041) & [video](https://slideslive.com/39000277) & [ppt](https://github.com/jingweio/DSF/blob/main/dsf_pre.pdf) & [speech](https://github.com/jingweio/DSF/blob/main/dsf_speech.pdf))
 
 
 <p align = "center">
